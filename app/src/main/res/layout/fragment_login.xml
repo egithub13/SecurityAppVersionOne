@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="25dp"
+    android:id="@+id/fragmentLogin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewLogin"
+        android:id="@+id/textViewLogin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:textSize="36dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewUserName"
+        android:id="@+id/textViewUserName"
+        android:textSize="24dp"
+        android:layout_below="@+id/textViewLogin"
+        android:layout_alignLeft="@+id/textViewLogin"
+        android:layout_alignStart="@+id/textViewLogin"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/editTextUserName"
+        android:layout_below="@+id/textViewUserName"
+        android:layout_alignLeft="@+id/textViewUserName"
+        android:layout_alignStart="@+id/textViewUserName"
+        android:textSize="36dp"
+        android:hint="@string/editTextUserNameHint"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewPassword"
+        android:id="@+id/textViewPassword"
+        android:layout_below="@+id/editTextUserName"
+        android:layout_alignLeft="@+id/editTextUserName"
+        android:layout_alignStart="@+id/editTextUserName"
+        android:layout_marginTop="65dp"
+        android:textSize="24dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/editTextPassword"
+        android:layout_below="@+id/textViewPassword"
+        android:layout_alignLeft="@+id/textViewPassword"
+        android:layout_alignStart="@+id/textViewPassword"
+        android:textSize="36dp"
+        android:hint="@string/editTextPasswordHint"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="@string/buttonLogin"
+        android:id="@+id/buttonLogin"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_alignStart="@+id/editTextPassword"
+        android:layout_marginTop="170dp"
+        android:textSize="36dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_alignLeft="@+id/buttonLogin"
+        android:layout_alignStart="@+id/buttonLogin"
+        android:layout_marginTop="62dp"
+        android:textSize="24dp"/>
+
+
+</RelativeLayout>
